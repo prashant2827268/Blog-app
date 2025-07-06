@@ -2,6 +2,30 @@ import Blog from "../models/blog.model.js"
 import mongoose from "mongoose"
 import slugify from "slugify";
 
+export const blogList = async(req,res) =>{
+  try{
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+    const blogs = await Blog.find({})
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(limit);
+
+    const totalBlogs = await Blog.countDocuments();
+
+    res.status(200).json({
+      message: "Blogs fetched successfully",
+      total: totalBlogs,
+      currentPage: page,
+      blogs,
+    });
+
+  }catch(error){
+    console.error("Error fetching blogs",error.message);
+    res.status(500).json({message:"Internal server error"});
+  }
+}
 export const createBlog = async(req,res) => {
   const {author,title, content,image,tags} = req.body;
   if(!author || !title || !content){

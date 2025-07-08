@@ -17,7 +17,15 @@ Feature Selection:-
 
 Blog APIs:-
 
-Implemented create blog api
-Implemented update blog api
-Implemented delete blog api
-Implemented get blogs api
+1. Implemented create blog api
+2. Implemented update blog api
+3. Implemented delete blog api
+4. Implemented get blogs api
+
+
+# Date - 07-07-2025
+
+Auth APIs:-
+
+1. Implented login user Api
+2. Implemented signup user Api

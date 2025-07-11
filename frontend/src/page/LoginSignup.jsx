@@ -15,7 +15,7 @@ export default function LoginSignup() {
     name: "",
     email: "",
     password: "",
-    confirm: "",
+    confirm: "", 
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");

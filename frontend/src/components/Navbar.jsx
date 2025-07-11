@@ -18,7 +18,7 @@ export default function Navbar({ onLogout }) {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
         {/* Logo / Brand */}
         <a href="/" className="text-lg font-semibold tracking-tight">
-          MyApp
+          Bloggy
         </a>
 
         {/* Desktop links */}

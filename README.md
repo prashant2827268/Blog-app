@@ -21,6 +21,7 @@ Blog APIs:-
 2. Implemented update blog api
 3. Implemented delete blog api
 4. Implemented get blogs api
+5. Implemented get blogs by niche
 
 
 # Date - 07-07-2025

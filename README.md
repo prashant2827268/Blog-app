@@ -30,3 +30,5 @@ Auth APIs:-
 
 1. Implented login user Api
 2. Implemented signup user Api
+3. Implement forgot password
+4. 
